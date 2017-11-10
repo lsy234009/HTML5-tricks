@@ -1,0 +1,38 @@
+@import "compass/css3";
+
+html, body { height: 100%; }
+
+body {
+  overflow: hidden;
+  margin: 0;
+  perspective: 10em;
+  animation: view 2s ease-in infinite alternate;
+}
+
+.cube {
+  &, * {
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%; left: 50%;
+  }
+  transform-style: preserve-3d;
+  transform: rotateX(-35deg) rotateY(35deg);
+}
+
+.face {
+  margin: -5em;
+  border: solid .25em;
+  width: 10em; height: 10em;
+  @for $i from 0 to 4 {
+    &:nth-child(#{$i + 1}) {
+      transform: rotateY($i*90deg) translateZ(5em);
+      background: hsla($i*360/4, 100%, 70%, .75)
+    }
+  }
+}
+
+@keyframes view {
+  to {
+    perspective: 100em;
+  }
+}

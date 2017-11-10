@@ -1,0 +1,50 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+  margin: 0;
+  perspective: 10em;
+  animation: view 2s ease-in infinite alternate;
+}
+
+.cube {
+  transform-style: preserve-3d;
+  transform: rotateX(-35deg) rotateY(35deg);
+}
+.cube, .cube * {
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.face {
+  margin: -5em;
+  border: solid .25em;
+  width: 10em;
+  height: 10em;
+}
+.face:nth-child(1) {
+  transform: rotateY(0deg) translateZ(5em);
+  background: rgba(255, 102, 102, 0.75);
+}
+.face:nth-child(2) {
+  transform: rotateY(90deg) translateZ(5em);
+  background: rgba(179, 255, 102, 0.75);
+}
+.face:nth-child(3) {
+  transform: rotateY(180deg) translateZ(5em);
+  background: rgba(102, 255, 255, 0.75);
+}
+.face:nth-child(4) {
+  transform: rotateY(270deg) translateZ(5em);
+  background: rgba(178, 102, 255, 0.75);
+}
+
+@keyframes view {
+  to {
+    perspective: 100em;
+  }
+}

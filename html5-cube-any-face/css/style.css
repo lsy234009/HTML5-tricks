@@ -1,0 +1,90 @@
+html
+{
+  height:100%;
+}
+
+body
+{
+	margin:0;
+  padding:0;
+  background : -webkit-linear-gradient(top, rgb(0, 0, 0) 00%, rgb(200, 200, 200) 100%);
+  background : -moz-linear-gradient(top, rgb(0, 0, 0) 00%, rgb(200, 200, 200) 100%);
+  background : -o-linear-gradient(top, rgb(0, 0, 0) 00%, rgb(200, 200, 200) 100%);
+  background : -ms-linear-gradient(top, rgb(0, 0, 0) 00%, rgb(200, 200, 200) 100%);
+  background : -linear-gradient(top, rgb(0, 0, 0) 00%, rgb(200, 200, 200) 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.container {
+    border: 1px solid black;
+	margin:50px;
+	background:#ccc;
+	width:150px;
+}
+#cubeParent{
+	height:150px;
+	width:150px;
+	position:relative;
+}
+.cubeFace, .cubeFace1{
+	height:150px;
+	width:150px;
+	position:absolute;
+}
+#face1{
+	background:#00F;
+}
+#face2{
+	background:#f0f;
+}
+#face3{
+	background:#063;
+}
+#face4{
+	background:#c00;
+}
+#face5{
+	background:#f60;
+}
+#face6{
+	background:#ff0;
+}
+.carItem{
+	position:absolute;
+	width:85px;
+	height:113px;
+}
+#rotPlane{
+	width:200px;
+	height:200px;
+	background:#00f;
+	position:relative;
+	color:#FFF;
+}
+button
+{
+  padding:5px 10px;
+  margin:10px;
+  border-radius:5px;
+  background : -webkit-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(200, 200, 200) 100%);
+	background : -moz-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(200, 200, 200) 100%);
+	background : -o-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(200, 200, 200) 100%);
+	background : -ms-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(200, 200, 200) 100%); 
+	background : -linear-gradient(top, rgb(255, 255, 255) 0%, rgb(200, 200, 200) 100%);
+  border:1px solid #646464;
+}
+
+button:hover
+{
+  background : -webkit-linear-gradient(top, rgb(200, 200, 200) 0%, rgb(255, 255, 255) 100%);
+	background : -moz-linear-gradient(top, rgb(200, 200, 200) 0%, rgb(255, 255, 255) 100%);
+	background : -o-linear-gradient(top, rgb(200, 200, 200) 0%, rgb(255, 255, 255) 100%);
+	background : -ms-linear-gradient(top, rgb(200, 200, 200) 0%, rgb(255, 255, 255) 100%); 
+	background : -linear-gradient(top, rgb(200, 200, 200) 0%, rgb(255, 255, 255) 100%);
+}
+
+button:active
+{
+  position:relative;
+	top:1px;
+}
